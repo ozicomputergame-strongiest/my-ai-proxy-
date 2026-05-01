@@ -1,0 +1,64 @@
+{
+  "name": "ai-worker-proxy",
+  "version": "1.0.0",
+  "description": "OpenAI-compatible proxy for multiple AI providers on Cloudflare Workers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "type-check": "tsc --noEmit",
+    "check": "tsc --noEmit && eslint src --ext .ts"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "ai",
+    "proxy",
+    "openai",
+    "proxy",
+    "ai",
+    "api-gateway",
+    "cloudflare-workers",
+    "anthropic",
+    "claude",
+    "gemini",
+    "gpt-4",
+    "openai-api",
+    "ai-proxy",
+    "multi-provider",
+    "failover",
+    "load-balancer",
+    "serverless",
+    "edge-computing",
+    "openai-compatible",
+    "llm",
+    "chatgpt",
+    "ai-gateway"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zxcloli666/AI-Worker-Proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zxcloli666/AI-Worker-Proxy/issues"
+  },
+  "homepage": "https://github.com/zxcloli666/AI-Worker-Proxy#readme",
+  "author": "noname",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251224.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "wrangler": "^4.76.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@google/genai": "^1.42.0",
+    "openai": "^4.73.0"
+  }
+}
